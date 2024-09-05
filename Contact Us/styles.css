@@ -1,0 +1,147 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F6FC;
+}
+
+header {
+    background-color: #1b1836;
+    padding: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    margin-right: 25px;
+}
+
+nav ul li {
+    margin: 20px 15px 10px 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.contact {
+    border: 2px solid #888;
+    /* Додаємо сіру обводку */
+    padding: 15px 30px;
+    /* Додаємо відступи, щоб обводка не була занадто близько до тексту */
+    border-radius: 5px;
+    /* Робимо краї обводки округлими */
+    text-decoration: none;
+    /* Прибираємо підкреслення */
+    border-radius: 50px;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1B1C2B;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group>div {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1B1C2B;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #1b1836;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #1b1836;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+}
+
+.footer-left h3,
+.footer-right h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-contact {
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+}
