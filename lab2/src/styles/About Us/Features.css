@@ -1,0 +1,48 @@
+.features .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature1, .feature2 {
+    padding: 20px;
+}
+
+.feature1 {
+    text-align: left;
+    margin-left: 5vh;
+}
+
+.feature2 {
+    text-align: left;
+    margin-right: 5vh;
+}
+
+.feature-image {
+    display: flex;
+    margin: 0 auto;
+}
+
+.features{
+    background-color: #F4F5F5;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.feature h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+.feature-image {
+    flex: 1;
+    max-width: 50%;
+    border-radius: 10px;
+}
