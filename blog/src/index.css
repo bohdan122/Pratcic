@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.home, .categories-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+.categories-page h1{
+  display: flex;
+  justify-content: center; /* Центрування по горизонталі */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 20px;
+}
+
+.header-container {
+  padding: 10px 0;
+  color: #101828;
+  display: flex;
+  justify-content: flex-start; /* Елементи будуть розташовані поруч зліва */
+  align-items: center;
+  padding: 0 25px;
+  font-weight: 600;
+}
+
+.header-title {
+  margin-right: 20px; /* Додаємо відступ між заголовком і навігацією */
+  font-size: 1.8rem;
+}
+
+nav {
+  margin: 0; /* Вирівнюємо навігацію */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+nav ul li {
+  margin-left: 20px; /* Додаємо відступ між пунктами меню */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #475467;
+  font-weight: 600;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center; /* Центрування по горизонталі */
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50vh;
+}
+
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6c5ce7;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5a4fb0;
+}
+
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Картки будуть адаптуватися під розмір екрану */
+  gap: 20px; /* Відстань між картками */
+}
+
+.post-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+.post-card img {
+  width: 100%; /* Картинка займає всю ширину картки */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.post-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.post-card p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.post-card a {
+  text-decoration: none;
+  color: #6c5ce7;
+  font-weight: bold;
+}
+
+.post-card a:hover {
+  color: #5a4fb0;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+.post-meta span {
+  color: #777;
+  margin-bottom: 1vh;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.social-icons a {
+ display: flex;
+ color: white;
+ text-decoration: none;
+}
+
+.pagination li {
+  list-style: none;
+  margin: 0 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination li.active {
+  background-color: #6c5ce7;
+  color: white;
+}
+
+.pagination li:hover {
+  background-color: #f4f4f9;
+}
+
+.post-detail {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+/* Стиль для зображення у деталях посту */
+.post-detail img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Додаємо тінь для зображення */
+}
+
+/* Стиль для заголовку посту */
+.post-detail {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+
+}
+
+.post-detail h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #101828;
+}
+
+.post-detail p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.post-detail img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.category-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Додаємо флексбокс для розташування категорій в рядок */
+  justify-content: left; /* Центруємо категорії */
+  flex-wrap: wrap; /* Якщо елементів буде багато, вони перейдуть на новий рядок */
+  margin-bottom: 10px;
+}
+
+.category-sidebar li {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 10px 10px 0; /* Додаємо відступи між елементами */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-sidebar li:hover {
+  background-color: #6c5ce7;
+  color: #fff;
+}
+
+.home h1{
+  text-align: center;
+}
+
+.home h2{
+  text-align: center;
+  color: #475467;
+  font-weight: 400;
+}
+
+.home h1 a {
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #6941C6;
+}
+
+.site-footer {
+  background-color: #101828;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Простір між секціями футера */
+  flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок на маленьких екранах */
+}
+
+.footer-section {
+  width: 25%; /* Кожен блок займає 25% ширини на великих екранах */
+  margin-bottom: 20px;
+}
+
+.footer-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin-bottom: 10px;
+}
+
+.post-iamge-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #6c5ce7; /* Додаємо інший колір для hover ефекту */
+}
+
+.sort-options {
+  margin-bottom: 20px; /* Add some space below the sorting dropdown */
+}
+
+/* Style for the sorting dropdown select element */
+.sort-options select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.sort-options select:hover,
+.sort-options select:focus {
+  border-color: #6c5ce7; /* Change border color on hover and focus */
+  outline: none; /* Remove default outline */
+}
+
+.sort-options label {
+  font-weight: 600;
+  color: #101828;
+  margin-right: 10px; /* Space between label and select */
+}
+
+@media (max-width: 1000px) {
+  .blog-list {
+    grid-template-columns: 1fr;
+  }
+
+  .home {
+    padding: 10px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  .post-card {
+    padding: 15px;
+  }
+
+  .post-card img {
+    width: 100%; /* Зображення займає 100% ширини контейнера */
+    height: auto; /* Автоматичне збереження пропорцій */
+  }
+
+  .post-card h2 {
+    font-size: 1.2rem; /* Зменшення розміру заголовка на мобільних пристроях */
+  }
+
+  .post-card p {
+    font-size: 0.9rem; /* Зменшення розміру тексту */
+  }
+
+  .pagination li {
+    padding: 8px 12px; /* Зменшення розмірів елементів пагінації */
+  }
+
+  .post-detail {
+    padding: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .post-detail h1 {
+    font-size: 1.5rem; /* Зменшення розміру заголовка на мобільних пристроях */
+  }
+
+  .post-detail p {
+    font-size: 1rem; /* Зменшення розміру тексту */
+  }
+
+  .category-sidebar {
+    padding: 10px;
+  }
+
+  .category-sidebar li {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  .category-sidebar ul {
+    flex-direction: column; /* Повертаємо вертикальне розташування для мобільних пристроїв */
+    align-items: center;
+  }
+
+  .category-sidebar li {
+    margin: 5px 0; /* Відступи для вертикального списку */
+    width: 80%; /* Робимо ширші елементи для мобільних пристроїв */
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 100%; /* Робимо секції на всю ширину */
+    text-align: center; /* Центруємо текст */
+  }
+
+  .footer-section ul {
+    padding-left: 0;
+  }
+
+    /* Adjust the sorting dropdown for mobile view */
+    .sort-options {
+      text-align: center; /* Center the sorting dropdown on smaller screens */
+    }
+  
+    .sort-options select {
+      width: 100%; /* Make the select element full-width on smaller screens */
+      font-size: 0.9rem; /* Slightly smaller font size for mobile */
+    }
+    
+    .social-icons a{
+      display: flex;
+      justify-content: center;
+    }
+}
