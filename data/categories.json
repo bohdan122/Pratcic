@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "UX Design",
+      "slug": "ux-design"
+    },
+    {
+      "id": 2,
+      "name": "Development",
+      "slug": "development"
+    },
+    {
+      "id": 3,
+      "name": "Product Management",
+      "slug": "product-management"
+    },
+    {
+      "id": 4,
+      "name": "Leadership",
+      "slug": "leadership"
+    },
+    {
+      "id": 5,
+      "name": "Marketing",
+      "slug": "marketing"
+    }
+  ]
