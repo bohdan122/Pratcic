@@ -3,9 +3,11 @@
   font-family: 'Arial', sans-serif;
   background: rgb(60,64,198);
   background: rgba(60,64,198,1);
-  height: 100vh; /* Змінено на 100vh для висоти видимого екрану */
-  margin: 0; /* Додано для видалення відступів */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  overflow: auto; /* Allow scrolling if needed */
 }
+
 
 
 .header {
@@ -74,4 +76,17 @@
   text-align: center;
   background-color: #ffffff00;
   color: rgb(0, 0, 0);
+}
+
+@media (max-width: 600px) {
+  .palette {
+    margin: 5px; /* Less margin */
+    padding: 10px; /* Less padding */
+  }
+
+  .color-box {
+    width: 80px; /* Adjust size for smaller screens */
+    height: 80px;
+    margin: 5px;
+  }
 }
